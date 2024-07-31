@@ -53,6 +53,7 @@ String platformControlKey(TargetPlatform platform, String key) {
     case TargetPlatform.macOS:
       return ' (CMD-$key)';
   }
+  return '';
 }
 
 /// Returns true if the platform is a desktop.
@@ -67,6 +68,7 @@ bool isDesktop(TargetPlatform platform) {
     case TargetPlatform.macOS:
       return true;
   }
+  return false;
 }
 
 /// Locate in which available picker with its color swatches a
